@@ -1,0 +1,24 @@
+#Simple java code to calcuate your age...
+
+import java.util.Scanner;
+
+public class sfida {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+     
+        System.out.println("Enter your year of birth");
+        int yearOfBirth = scanner.nextInt();
+        System.out.println("Enter your birth month");
+        int birthMonth = scanner.nextInt();
+        System.out.println("Enter the current year");
+        int currentYear = scanner.nextInt();
+        System.out.println("Enter your day of birth");
+        int dayOfBirth = scanner.nextInt();
+
+        int age = currentYear - yearOfBirth;
+
+        System.out.println("Your age is: " + age);
+        
+        scanner.close();
+    }
+}
